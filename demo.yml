@@ -4,6 +4,8 @@
     - name: est que ca fonctionne
       ansible.builtin.debug:
         var: ansible_facts
+      tags:
+        - never
     
     - name: copy
       ansible.builtin.copy:
