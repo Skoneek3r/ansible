@@ -3,9 +3,10 @@
 
     - name: est que ca fonctionne
       ansible.builtin.debug:
-        msg: oui ! 
+        var: ansible_facts
     
     - name: copy
       ansible.builtin.copy:
         src: test.html
         dest: /tmp/test.html
+    
