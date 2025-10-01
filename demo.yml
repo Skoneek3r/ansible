@@ -3,4 +3,9 @@
 
     - name: est que ca fonctionne
       ansible.builtin.debug:
-        msg: oui !
+        msg: oui ! 
+    
+    - name: copy
+      ansible.builtin.copy:
+        src: test.html
+        dest: /tmp/test.html
