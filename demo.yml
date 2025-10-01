@@ -1,4 +1,6 @@
 - hosts: all
+  roles:
+    - common
   tasks: 
 
     - name: est que ca fonctionne
@@ -6,20 +8,10 @@
         var: ansible_facts
       tags:
         - never
-    
-    - name: copy
-      ansible.builtin.copy:
-        src: test.html
-        dest: /tmp/test.html
-
-    - name: copie temp
-      ansible.builtin.template:
-        src: readme.txt.j2
-        dest: /tmp/readme.txt
 
     - ansible.builtin.shell:
         cmd: cat /tmp/readme.txt
 
     - ansible.builtin.shell:
-        cmd: cat /tmp/test.html
+        cmd: ls /tmp
     

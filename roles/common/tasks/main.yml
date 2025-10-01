@@ -1,0 +1,11 @@
+---
+
+- name: copy
+  ansible.builtin.copy:
+  src: test.html
+  dest: /tmp/test.html
+
+- name: utilisation temp
+  ansible.builtin.template:
+    src: readme.txt.j2
+    dest: /tmp/readme.txt
