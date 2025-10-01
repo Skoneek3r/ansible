@@ -3,4 +3,4 @@
 
     - name: est que ca fonctionne
       ansible.builtin.debug:
-        msg:oui !
+        msg: oui !
