@@ -2,8 +2,8 @@
 
 - name: copy
   ansible.builtin.copy:
-  src: test.html
-  dest: /tmp/test.html
+    src: test.html
+    dest: /tmp/test.html
 
 - name: utilisation temp
   ansible.builtin.template:
